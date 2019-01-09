@@ -94,6 +94,9 @@ If you are using TLS between Mediation Servers and gateways, you will need to co
 ## Set up your users in Office 365
 
 Log in to the Office 365 admin portal, add the users that will be enabled for online voice services, and assign an E5 license or Phone System in Office 365 add-on to the E3 license to these users. For information about adding users, see [Add users to Office 365 for business](https://support.office.com/en-US/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc).
+
+> [!NOTE]
+> If you are synchronizing users from on-premise active directory to Office 365, then create the user accounts in on-premise active directory using the SIP domain defined for Cloud Connector for the user's prinicipal domain name.
   
 ## Enable users for Phone System in Office 365 voice and voicemail services
 
@@ -162,6 +165,9 @@ When a P2P call is escalated to a PSTN conference, the Skype for Business Online
     Use the default SIP domain of Cloud Connector (the first SIP domain in the .ini file) as the user domain.
     
     Please note that license assignment is only required for the user propagation into the Skype for Business online directory. Assign an Office 365 licenses (such as E5) to the account you create, allow up to one hour for the changes to propagate, then remove the license from this account.
+    
+> [!NOTE]
+> If you are synchronizing users from on-premise active directory to Office 365, then create the user account in on-premise active directory using the default SIP domain of Cloud Connector for the user's prinicipal domain name. 
     
 2. Start a tenant Azure AD remote PowerShell session using your global or user admin credentials, and then run the following cmdlet to set the department for the Azure AD user account configured in step 1 to "HybridMediationServer":
 

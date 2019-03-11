@@ -139,6 +139,8 @@ At a very high level, implementing QoS requires these steps:
       > We recommend implementing these QoS policies using the client source ports and a source and destination IP address of “any.” This will catch both incoming and outgoing media traffic on the internal network.  
 
    3. On [Teams Admin Center](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings)
+   > [!IMPORTANT]
+      > There is no guarantee that the DSCP markers will not be stripped when traversing the Internet, therefore you may need to re-add the DSCP markers on ingress to your network.
 5. [Validate the QoS implementation](#validate-the-qos-implementation) by analyzing Teams traffic on the network.
 
 As you prepare to implement QoS, keep the following guidelines in mind:

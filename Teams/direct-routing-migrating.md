@@ -44,7 +44,7 @@ OnPremLineURI |N/A|The phone number  must be synced from the on-premises AD. |Th
 |HostedVoiceMailPolicy |BusinessVoice|BusinessVoice|BusinessVoice|BusinessVoice|
 |VoiceRoutingPolicy|Has a value|Has a value|Has a value|N/A|
 |OnlineVoiceRoutingPolicy|$Null|$Null|$Null|Has a value|
-|TeamsUpgradePolicy<sup>1</sup>|TeamsOnly, SfBOnly or Islands|$Null|$Null|Islands or TeamsOnly|
+|TeamsUpgradePolicy<sup>1</sup>|TeamsOnly, SfBOnly|$Null|$Null|TeamsOnly|
 |TeamsInterPolicy<sup>2</sup></br>CallingDefaultClient – please read the note below.|Teams or SfB |SfB|SfB|Teams|
 |TeamsCallingPolicy</br>AllowPrivateCalling|True|N/A|N/A|True|
 |TeamsCallingPolicy</br>AllowGroupCalling|True|N/A|N/A|True|

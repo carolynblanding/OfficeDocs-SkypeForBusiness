@@ -61,6 +61,11 @@ By using Phone System, your Skype for Business users will get the following feat
 |[Check Skype for Business voicemail and options](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Here's how Cloud Voicemail works: When a user receives a voicemail, it is delivered to their mailbox as an email with the voicemail message as an attachment. They can also listen to their messages over their Skype certified desktop phone, all Skype for Business applications, or Lync for Mac 2011.  <br/> Cloud Voicemail includes personalized greeting, message waiting indicator, and reply with call. You can have all of your voicemail deposited in mailboxes and made available through Skype for Business on your PC, mobile device, and IP phone.  <br/> |
 |Music on hold | Available in September 2019, Phone System will play default music defined by the service when an external call from the Public Switched Telephone Network (PSTN) is placed on hold.  This feature works for one-to-one PSTN-to-Teams calls in addition to calls made to a call queue. This feature provides on-hold notification parity with other platforms. (All other platforms give a visual cue when a user is put on hold, but the PSTN caller has had no way of knowing.)  On first release, this feature is not configurable by the administrator. Hold music is also not supported in consultative transfer of a PSTN call.| 
 |Reverse Number Lookup | Available in September, 2019, Phone System will show called ID for an external phone number if the number is associated with a user in AAD. If the phone number is not in AAD, the telco provided display name will be shown if it is available.  |
+|Call Delgation|This feature...|
+|Shared Line Appearance|This feature...|
+|Call Park|This feature...|
+|Group Call Pickup|This feature...|
+|Music on Hold|This feature...|
 
    
 ## Plan and set up the Phone System in Office 365

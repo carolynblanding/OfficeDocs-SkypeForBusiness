@@ -66,6 +66,8 @@ The following requirements assume that you already have Skype for Business Serve
 
 In addition to the requirements above, the below requirements must be configured to connect to the Microsoft Cloud Voicemail service:
 
+- Your Office 365 tenant must have one active Office 365 subscription to any service. A per user phone system license is **not** required. 
+
 - Hybrid connectivity. If you already have Skype for Business Server deployed, and you want to enable Cloud Voicemail for your on-premises users, you must ensure that you have hybrid connectivity set up between your on-premises and online environments. This is sometimes called a split domain configuration.
 
    For more information, see [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) and [Configure hybrid connectivity between Skype for Business Server and Office 365](configure-hybrid-connectivity.md).

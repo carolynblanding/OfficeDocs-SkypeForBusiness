@@ -169,7 +169,7 @@ Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$b2}
 ```
 Run this to add the following normalization rule to the existing tenant dial plan named RedmondDialPlan.
 ```PowerShell
-$nr1=New-CsVoiceNormalizationRule -Parent Global -Description 'Organization extension dialing' -Pattern '^(\\d{3})$' -Translation '+14255551$1' -Name NR1 -IsInternalExtension $false -InMemory
+$nr1=New-CsVoiceNormalizationRule -Parent Global -Description 'Organization extension dialing' -Pattern '^(\d{3})$' -Translation '+14255551$1' -Name NR1 -IsInternalExtension $false -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$nr1}
 ```
 Run this to remove the following normalization rule from the existing tenant dial plan named RedmondDialPlan.
@@ -183,13 +183,13 @@ Run the following when you want to also examine the existing normalization rules
 ```PowerShell
 Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules
 Description         : 4-digit
-Pattern             : ^(\\d{4})$
+Pattern             : ^(\d{4})$
 Translation         : +1426666$1
 Name                : NR2
 IsInternalExtension : False
 
 Description         : 3-digit
-Pattern             : ^(\\d{3})$
+Pattern             : ^(\d{3})$
 Translation         : +14255551$1
 Name                : NR12
 IsInternalExtension : False
